@@ -10,6 +10,10 @@ const config: Config = {
   theme: {
     extend: {},
   },
+  daisyui: {
+    themes: ["light"],
+    darkTheme: "light",
+  },
   plugins: [require("daisyui")],
 };
 
