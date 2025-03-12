@@ -13,6 +13,7 @@ const config: Config = {
   daisyui: {
     themes: ["light"],
     darkTheme: "light",
+    base: true,
   },
   plugins: [require("daisyui")],
 };

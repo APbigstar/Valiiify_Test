@@ -59,7 +59,31 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: revert;
   font-weight: revert;
+}
+
+/* In your global.css or main stylesheet */
+html[data-theme="dark"] {
+  color-scheme: light !important;
+}
+
+html {
+  color-scheme: light !important;
+  data-theme: "light" !important;
+}
+
+/* Force light mode on specific elements if needed */
+.navbar,
+.sidebar,
+body,
+main {
+  background-color: white !important;
+  color: black !important;
 }
